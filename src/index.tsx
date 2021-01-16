@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase';
+
+firebase.initializeApp({
+  apiKey: "AIzaSyDuReFU-21IkO9vnGxhMpjOX0NAK0bDaSk",
+  authDomain: "collegedunia885.firebaseapp.com",
+  projectId: "collegedunia885",
+  storageBucket: "collegedunia885.appspot.com",
+  messagingSenderId: "709638460098",
+  appId: "1:709638460098:web:b91cf082fb71f74ecc615b",
+  measurementId: "G-ZCME0QFP73"
+});
 
 ReactDOM.render(
   <React.StrictMode>
