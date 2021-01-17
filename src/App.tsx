@@ -5,6 +5,20 @@ import { colleges } from "./colleges.json";
 function App() {
   const isMobile: boolean = window.innerWidth <= 500;
 
+  function handleScroll() {
+    if (
+      window.innerHeight + window.scrollY >=
+      document.body.offsetHeight - 30
+    ) {
+      alert("you're at the bottom of the page");
+    }
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll, true);
+    return () => window.removeEventListener("scroll", handleScroll, true);
+  });
+
   return (
     <div>
       <p
